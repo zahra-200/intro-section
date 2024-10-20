@@ -21,7 +21,7 @@ function NavLinks() {
     setDropDownCompony(!dropDownCompony);
   };
   return (
-    <nav className=" pr-5 flex flex-col h-screen absolute bg-[var(--Almost-White)]  -right-8 -top-8  sm:-top-16 w-[80%] sm:w-1/2 lg:w-full lg:static lg:justify-between  lg:flex-row   lg:h-auto ">
+    <nav className=" pr-5 flex flex-col h-screen absolute bg-[var(--Almost-White)]  -right-8 -top-8  sm:-top-16 w-[80%] sm:w-1/2 lg:w-full lg:static lg:justify-between  lg:flex-row  lg:h-min ">
       <div className="w-full flex items-center mb-5 mt-20 md:mt-24 lg:my-0 lg:w-[80%] ">
         <ul className="flex flex-col  px-5 lg:px-0 lg:flex-row gap-4 lg:gap-8 text-[var(--Medium-Gray)] font-medium">
           <li className="w-full text-left lg:w-40 lg:relative">
