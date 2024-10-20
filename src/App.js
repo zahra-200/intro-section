@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { createContext, useState } from "react";
+import Home from "./pages/Home";
 
+export const AppContext = createContext();
 function App() {
+  const [dropDownFeature, setDropDownFeature] = useState(false);
+  const [dropDownCompony, setDropDownCompony] = useState(false);
+  const [hamburger, setHamburger] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContext.Provider
+      value={{
+        setDropDownFeature,
+        setDropDownCompony,
+        dropDownCompony,
+        dropDownFeature,
+        hamburger,
+        setHamburger,
+      }}
+    >
+      <div
+        className={
+          hamburger
+            ? "bg-black bg-opacity-40 transition-all duration-200 lg:bg-inherit"
+            : ""
+        }
+      >
+        <Home />;
+      </div>
+    </AppContext.Provider>
   );
 }
 
