@@ -6,12 +6,12 @@ import icon3 from "./../../images/client-meet.svg";
 import icon4 from "./../../images/client-maker.svg";
 function Content() {
   return (
-    <div className="flex flex-col justify-center items-center h-screen w-full text-center mt-6 sm:mt-0  sm:flex-row-reverse sm:text-left  sm:justify-around lg:justify-center ">
+    <div className="flex flex-col justify-center  h-screen w-full text-center mt-6 sm:flex-row-reverse sm:text-left  sm:justify-around lg:justify-center ">
       <picture className="sm:w-[40%] lg:w-[30%] lg:ml-10">
         <source media="(min-width: 640px)" srcSet={imageDesktopContent} />
         <img src={imageMobileContent} alt="image-hero" />
       </picture>
-      <div className="flex flex-col justify-center items-center sm:w-[50%] sm:items-start lg:w-[40%] lg:mr-10">
+      <div className="flex flex-col  items-center sm:w-[50%] sm:items-start lg:w-[40%] lg:mr-10">
         <div>
           <h1 className="text-3xl font-bold text-[var(--Almost-Black)] mt-8 sm:text-6xl sm:mt-0 sm:w-[370px] lg:text-7xl lg:w-[440px]">
             Make remote work
